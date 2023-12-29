@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Himanshu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="images/x-icon">
+    <script src="https://kit.fontawesome.com/ecae0631ae.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>Himanshu Kashyap</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home </a></li>
+                    <li><a href="#about">About </a></li>
+                    <li><a href="#services">My Services </a></li>
+                    <li><a href="#portfolio">My Work </a></li>
+                    <li><a href="#contact">Contact </a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <!-- Social Icons Links abd icons-->
+         <div class="wrapper">
+
+            <div class="icon linkedin"><a href="https://www.linkedin.com/in/himanshu-6bb291199/" target="_blank">
+                <div class="tooltip">Linkedin</div> 
+                <span> <i class="fab fa-linkedin-in" href="https://www.linkedin.com/in/himanshu-6bb291199/" target="_blank"></i></span>
+            </a>
+            </div>
+
+            <div class="icon github"><a href="https://github.com/Himanshu4218" target="_blank">
+                <div class="tooltip">Github</div> 
+                <span><i class="fab fa-github"></i></span></a>
+            </div>
+
+            <div class="icon facebook"><a href="#" target="_self">
+                <div class="tooltip">Facebook</div> 
+                    <span><i class="fab fa-facebook-f"></i></span></a>
+            </div>
+
+            <div class="icon twitter"><a href="#" target="_self">
+                <div class="tooltip">Twitter </div> 
+                   <span><i class="fab fa-twitter"></i></span> </a>
+            </div>
+
+            <div class="icon whatsapp"><a href="https://wa.me/+919953679362" target="_blank">
+                <div class="tooltip">Whatsapp</div> 
+                   <span> <i class="fab fa-whatsapp"></i></span></a>
+            </div>
+        </div>      
+            <!--  -->
+
+            <div class="header-text">
+                Welcome to My Portfolio
+                <h1>
+                    <a href="" class="typewrite" data-period="2000"
+                        data-type='[ "Hi, I am Himanshu.", "I am a Full Stack Developer.", "I Love to Design.", "I Love to Develop." ]'>
+                        <span class="wrap"></span>
+                    </a>
+                </h1>
+            </div>
+            <div class="myData">
+               <a href="images/19je0369Resume.pdf" class="btn btn2" download><span>Download CV</span></a>
+               <a href="#contact" class="btn btn2"><span>Hire Me</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/myimage.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                         <p>My name is Himanshu Kashyap. I am from Delhi, India.<br>
+                            I am pursuing bachelor of technology in Mechanical Engineering at IIT ISM Dhanbad.<br>
+                        <br>
+                            You might be wondering that being from a core field background turned into a web developer ?
+                        <br><br>
+                        I tried to give web development a shot, during the pandemic.I decided to try creating simple html page — turns out to be boom for me and taught
+                        me a lot about HTML & CSS and then my journey started, Slowly snd steadily, I found it interesting to design and develop fast and performant websites.
+                        <br>
+                        I am a Full stack web developer, I can provide clean code and perfect design also I can make website more interactive and responsive with my animations & Designing skills.<br>
+                        A responsive design makes your website accessible to all users regardless of their devices.<br>
+                        <br>
+                        
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"><b>Skills</b></p>
+                        <p class="tab-links" onclick="opentab('experience')"><b>Experience</b></p>
+                        <p class="tab-links" onclick="opentab('education')"><b>Education</b></p>
+                        <p class="tab-links" onclick="opentab('projects')"><b>Projects</b></p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>HTML, CSS, JavaScript, DOM, Postman</li>
+                            <li><span>Frontend Developer</span><br>CSS, Bootstrap, React.js, Redux, Material UI</li>
+                            <li><span>Backend Developer</span><br>Express, Node.js, MongoDB, API Integration, Firebase</li>
+                            <li><span>Programming Tools</span><br>C, C++, Pyhton,OOPs, Data Structure, Algorithm, Git, Github</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span><b>Web Developer &nbsp;</b>Student Gymkhana,IIT(ISM) Dhanbad</span><br>
+                                ❖ Worked in a team Web project with admin portal & college user portal.<br>
+                                ❖ Built APIs for taking votes, making notices, displaying results etc.<br>
+                                ❖ Tech Stack Used: React,JS,CSS3
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Indian Institute of Technology(ISM) Dhanbad &nbsp;</span>B.Tech <br>(2019-23)
+                                MECHANICAL ENGINEERING</li>
+                            <li><span>DhanpatMal Virmani School &nbsp;</span> <br>12th April 2017 - April 2018 </li>
+                            <li><span>Rukmani Devi Jaipuria Public School &nbsp;</span><br>10th April 2015 - April 2016 </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>E-Commerce  Website</span></li>
+                            <li><span>Blog App</span></li>
+                            <li><span>C++ Big Integer Library</span></li>
+                            <li><span>Social Medial App</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills section starts here -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My Skills</h2>
+            <div class="skills-content">
+                <div class="column-left" style="padding: 15px; display: flex;" >
+                    <div class="column-right" style="flex-basis: 50%;">
+                        <p>HTML</p>
+                        <div class="containers">
+                            <div class="skills html">95%</div>
+                        </div>
+                        <p>CSS</p>
+                        <div class="containers">
+                            <div class="skills css">85%</div>
+                        </div>
+                        <p>Javascript</p>
+                        <div class="containers">
+                            <div class="skills js">80%</div>
+                        </div>
+                        <p>Node</p>
+                        <div class="containers">
+                            <div class="skills ts">75%</div>
+                        </div>
+                        <p>Bootstrap</p>
+                        <div class="containers">
+                            <div class="skills btr">70%</div>
+                        </div>
+                        <p>React</p>
+                        <div class="containers">
+                            <div class="skills ">70%</div>
+                        </div>
+                        <p>MongoDB</p>
+                        <div class="containers">
+                            <div class="skills DB">25%</div>
+                        </div>
+                    </div>
+                   
+                   <div class="chartBox" style="flex-basis: 50%;" onresize="responsiveFont()">
+                            <canvas id="myChart"></canvas>
+                   </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <div class="column-rright">
+        <h1>Expertise</h1>
+        <div class="expertise-container">
+            <div class="language">
+              <div class="expertise javascript">
+                <h3>75%</h3>
+              </div>
+              <h2>JavaScript</h2>
+            </div>
+        
+            <div class="language">
+              <div class="expertise python">
+                <h3>80%</h3>
+              </div>
+              <h2>C++</h2>
+            </div>
+
+            <div class="language">
+                <div class="expertise C">
+                    <h3>90%</h3>
+                </div>
+                <h2>C/C++</h2>
+              </div>
+
+              <div class="language">
+                <div class="expertise java">
+                    <h3>40%</h3>
+                </div>
+                <h2>Java</h2>
+              </div>
+        </div>
+    </div>
+
+    <div class="column-right-container">
+        <div class="images">
+            <img src="">
+            <img src="images/html.jpeg">
+            <img src="images/css.png">
+            <img src="images/js.png">
+            <img src="images/node.png">
+            <img src="images/bootstrap.png">
+            <img src="images/react.png">
+        </div>
+    </div>
+
+    <!-- My Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p> Every Website should be built with two primary goals. Firstly, it needs to work across all devices.
+                        Secondly, it needs to be fast as possible and My services fulfill both goals.
+                        I am always curious to learn more about new technologies and creative coding.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h2>Web Design</h2>
+                    <p> Most important part after development is to attract customers & users. 
+                        Fully responsive website using Bootstrap,CSS,Bootstrap,UI/UX.
+                        Creative animations and effects to enchance website in terms of look.
+                        Aim to provide the best user experience, which ultimately translates into conversions. 
+                       
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-angular"></i>
+                    <h2>React Developer</h2>
+                    <p>My favourite frameworks in terms of development.
+                        developing mobile and web-based apps via the React framework.
+                        Create high-performing, responsive, and interactive web applications.
+                        benefits of inbuilt library. Advance features of protecting projects.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.webp">
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>Allows user to buy and sell products, user can manage their orders, login/logout,Authentication and Authorization,
+                            Filtering of products, Add to cart, Checkout page, Order summary, Single product detail
+                            page,PayPal integrated Fully Responsive</p>
+                        <a href="https://myshop-550j.onrender.com/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Spotify Music Web App</h3>
+                        <p>SPA, Fully responsive music application where user can play, pause, forward, backward
+                            according to their preferences, features like auto play , animations, song progress bar</p>
+                        <a href="https://spotify-seven-beta.vercel.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg">
+                    <div class="layer">
+                        <h3>Blog App</h3>
+                        <p> Blog application for developer. Users can create and update their Blog. User can see Blog of other users but cannot modify it. Users can create, edit, like and comment on Blog. Tech Stack: Node.js, Express, MongoDB, JWT.</p>
+                        <a href="https://github.com/Himanshu4218/Blogs" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-4.png">
+                    <div class="layer">
+                        <h3>Big Integer Library</h3>
+                        <p> Built C++ library to handle integers greater than 64bit
+                            used Object oriented concepts. Ex- Operator overloading,
+                            this pointer etc. Handle operations of arithmetic, bitwise comparison
+                            operator along with other mathematical tools</p>
+                        <a href="https://github.com/Himanshu4218/C-Project"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>himanshkash4218@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+91 9953679362</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-envelope"></i></a>
+                    </div>
+                    <a href="images/19je0369Resume.pdf" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Fotter Section -->
+        <div class="copyright">
+            <p>Copyright @ Himanshu Kashyap <i class="fas fa-heart"></i> - Full Stack Developer </p>
+        </div>
+
+    </div>
+
+    <!--  -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz1Qzoo1ThFiF2Je0mBjrc_gnKq75gyyxNg4pOIj8MaC6NIeqHn0UFTjFNEUepzKq4T/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 1000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script>
+        var TxtType = function (el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+
+        TxtType.prototype.tick = function () {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+            var that = this;
+            var delta = 200 - Math.random() * 100;
+
+            if (this.isDeleting) { delta /= 2; }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+
+            setTimeout(function () {
+                that.tick();
+            }, delta);
+        };
+
+        window.onload = function () {
+            var elements = document.getElementsByClassName('typewrite');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-type');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtType(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+            document.body.appendChild(css);
+        };
+    </script>
+
+   
+  
+  
+  
+  <script>
+    const ctx = document.getElementById('myChart');
+  
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Problem Solving', 'Bootstrap', 'AJAX', 'DOM', 'Github', 'OOPs','API Integration','JSON','ECMAScript'],
+        datasets: [{
+          label: '% of knowledge',
+          data: [75, 70, 80, 85, 70, 60, 65,80,75],
+          borderWidth: 1,
+        }],
+      },
+      options: {
+        scales: {
+          y: {
+            ticks: {
+              color:'white'
+            },
+            beginAtZero: true
+          },
+          x: {
+            ticks: {
+              color:'white',
+              
+            },
+          }
+        }
+      },
+    });
+
+    // function responsiveFont(){
+    //  if(window.outerWidth < 720)   
+    //      Chart.defaults.font.size = 5;
+    // };
+
+  </script>
+
+  <!-- TO change the color of Chart.js -->
+
+  
+
+</body>
+
+</html>;
